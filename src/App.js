@@ -1,11 +1,13 @@
 import React from "react";
-import Header from "./Components/Header";
 import "./global.css";
+import Header from "./Components/Header";
+import AboutMe from "./Components/AboutMe";
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <AboutMe />
     </div>
   );
 }

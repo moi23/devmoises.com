@@ -4,6 +4,8 @@ import { Container } from "./styles";
 import Navbar from "../Navbar";
 import Typical from "react-typical";
 import devPerfil from "../../Assets/dev.jpg";
+import devVideo from "../../Assets/devVideo.mp4";
+
 import {
   FaGithubSquare,
   FaWhatsappSquare,
@@ -16,9 +18,16 @@ const Header = () => {
     <Container>
       <Navbar />
       <div className="wrapper">
-        <img src={devPerfil} alt="Imagem de Moisés Vilas Boas" />
+        <video
+          className="devPerfil"
+          src={devVideo}
+          autoPlay={true}
+          loop={true}
+          muted={true}
+        />
+        {/* <img src={devPerfil} alt="Imagem de Moisés Vilas Boas" /> */}
         <div id="alignText">
-          <h1>Hello Stranger</h1>
+          <h1>Hello Friend</h1>
           <h3>I am</h3>
         </div>
         <Typical

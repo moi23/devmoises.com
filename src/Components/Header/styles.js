@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Background from "../../Assets/background.png";
 
 export const Container = styled.div`
-  height: 110vh;
+  height: 100vh;
   background: url(${Background});
   background-size: cover;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@ export const Container = styled.div`
       font-weight: 100;
     }
 
-    img {
+    .devPerfil {
       height: 40%;
       width: auto;
       border-radius: 50%;
@@ -65,5 +65,11 @@ export const Container = styled.div`
       margin: 0 15px;
       transition: 0.3s;
     }
+  }
+
+  .meVideo {
+    height: 330px;
+    width: 330px;
+    background: blue;
   }
 `;
